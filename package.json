@@ -1,0 +1,17 @@
+{
+  "name": "cards-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dbstart": "json-server -w db.json",
+    "tunnel": "ngrok http 3000",
+    "start": "npm run dbstart & npm run tunnel"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "ngrok": "^3.3.0"
+  }
+}
